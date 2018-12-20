@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表单</title>
+		<style>
+			tr{
+				height: 50px;
+			}
+			tr td:first-of-type{
+				width: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<form method="post" action="#">
+			<input type="hidden" value="adhgrt" />
+			<table width="500" align="center" border="1" 
+				cellpadding="0" cellspacing="0">
+			    <caption>
+			    	<h2>注册用户</h2>
+			    </caption>
+			    <tr>
+			    	<td><label for="oserName">用户名</label></td>
+			    	<td>
+			    		<input type="text" name="oserName" id="oserName" maxlength="15" />
+			    	</td>
+			    </tr>
+			    <tr>
+			    	<td><label for="userpwd">密码</label></td>
+			    	<td><input type="password" id="userpwd" name="userpwd"/></td>
+			    </tr>
+			    <tr>
+			    	<td>性别</td>
+			    	<td><input type="radio" name="sex" id="sex" value="男" />男
+			    	<input type="radio" name="sex" value="女" id="sex1"/>女</td>
+			    </tr>
+			    <tr>
+			    	<td>爱好</td>
+			    	<td><input type="checkbox" name="hobby" checked value="看书"/>看书
+			    	<input type="checkbox" name="hobby" checked value="看电影"/>看电影
+			    	<input type="checkbox" name="hobby" checked value="玩游戏"/>玩游戏</td>
+			    </tr>
+			    <tr>
+			    	<td>上传头像</td>
+			    	<td><input type="file" name="photo"/></td>
+			    </tr>
+			    <tr>
+			    	<td>图片按钮</td>
+			    	<td>&nbsp;&nbsp;&nbsp;<input type="image" src="img/pic1.png" /> </td>
+			    </tr>
+			    <tr>
+			    	<td>input 按钮</td>
+			    	<td>
+			    		<input type="submit" value="提交按钮"/>
+			    		<input type="button" value="普通按钮"/>
+			    		<input type="reset" value="重置按钮"/> 
+			    	</td>
+			    </tr>
+			    <tr>
+			    	<td>button按钮</td>
+			    	<td>
+			    		<button type="submit" value="提交按钮">提交按钮</button>
+			    		<button type="button" value="普通按钮">普通按钮</button>
+			    		<button type="reset" value="重置按钮">重置按钮</button>
+			    	</td>
+			    </tr>
+			    <tr>
+			    	<td>出生日期</td>
+			    	<td>
+			    		<select name="borathyear">
+			    			<option value="1990">1990</option>
+			    			<option value="1991">1991</option>
+			    			<option value="1992">1992</option>
+			    			<option value="1993">1993</option>
+			    			<option value="1994">1994</option>
+			    			<option value="1995">1995</option>
+			    			<option value="1996">1996</option>
+			    			<option value="1997">1997</option>
+			    			<option value="1998">1998</option>
+			    			<option value="1999">1999</option>
+			    			<option value="2000">2000</option>
+			    			<option value="2001">2001</option>
+			    			<option value="2002">2002</option>
+			    			<option value="2003">2003</option>
+			    			<option value="2004">2004</option>
+			    			<option value="2005">2005</option>
+			    		</select>年
+			    		<select name="borathmonth">
+			    			<option value="1">1</option>
+			    			<option value="2">2</option>
+			    			<option value="3">3</option>
+			    			<option value="4">4</option>
+			    			<option value="5">5</option>
+			    			<option value="6">6</option>
+			    			<option value="7">7</option>
+			    			<option value="8">8</option>
+			    			<option value="9">9</option>
+			    			<option value="10">10</option>
+			    			<option value="11">11</option>
+			    			<option value="12">12</option>
+			    		</select>月
+			    		<select name="borathday">
+			    			<option value="1">1</option>
+			    			<option value="2">2</option>
+			    			<option value="3">3</option>
+			    			<option value="4">4</option>
+			    			<option value="5">5</option>
+			    			<option value="6">6</option>
+			    			<option value="7">7</option>
+			    			<option value="8">8</option>
+			    			<option value="9">9</option>
+			    			<option value="10">10</option>
+			    			<option value="11">11</option>
+			    			<option value="12">12</option>
+			    			<option value="13">13</option>
+			    			<option value="14">14</option>
+			    			<option value="15">15</option>
+			    			<option value="16">16</option>
+			    			<option value="17">17</option>
+			    			<option value="18">18</option>
+			    			<option value="19">19</option>
+			    			<option value="20">20</option>
+			    			<option value="21">21</option>
+			    			<option value="22">22</option>
+			    			<option value="23">23</option>
+			    			<option value="24">24</option>
+			    			<option value="25">25</option>
+			    			<option value="26">26</option>
+			    			<option value="27">27</option>
+			    			<option value="28">28</option>
+			    			<option value="29">29</option>
+			    			<option value="30">30</option>
+			    			<option value="31">31</option>
+			    			v
+			    		</select>
+			    	</td>
+			    </tr>
+			</table>
+		</form>
+	</body>
+</html>
