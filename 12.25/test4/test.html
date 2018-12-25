@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>京东登录页面</title>
+		<style>
+			body{
+				width: 990px;
+				margin: 0 auto;
+			}
+			header{
+				margin: 0 0 0 80px ;
+			}
+			.beijiin{
+				float: left;
+			}
+			img+p{
+				float: left;
+				color:rgba(0,0,0,0.5);
+			}
+			img+p:after{
+				content: '';
+				display: block;
+				clear: both;
+			}
+			div{
+				position :relative;
+			}
+			div>form{
+				background-color: white;
+				display: inline-block;
+				position: relative;
+				left: 600px;
+				top:-450px
+			}
+			.butten{
+				background-color: #e4393c;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<article>
+			<header>
+				<img class="beijiin" src="logo.png" />
+				<p><strong>欢迎登录</strong></p>
+			</header>
+			<div><img src="banner.png" />
+				<form method="post" action="#">
+					<p>京东会员<span class="zhuche">立即注册</span></p>
+					<p><img src="icon1.jpg" /><input type="text" placeholder="邮箱/用户名/已验证手机"/></p>
+					<p><img src="icon2.jpg" /><input type="password" /> </p>
+					<p><input type="radio" value="自动登录"/>自动登录 
+					<span class="pwd">忘记密码?</span></p>
+					<p><input class="butten" type="button" value="普通按钮"/></p>
+				</form>
+			</div>
+		</article>
+	</body>
+</html>
