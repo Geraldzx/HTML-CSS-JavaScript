@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>四则运算</title>
+		<script>
+			function add(num1,num2){
+				return num1+num2;
+			}
+			function Reduction(num1,num2){
+				/*if(num2>num1)
+				   return num2-num1;*/
+				return num1-num2;
+			}
+			function take(num1,num2){
+				return num1*num2;
+			}
+			function addition(num1,num2){
+				if(num2==0)
+				    return null;
+				return num1/num2;
+			}
+			function mo(num1,num2){
+				return num1%num2;
+			}
+			var num1 = prompt("请输入一个数字");
+			var num2 = prompt("请输入一个数字");
+			var num3 = prompt("请输入运算方法");
+			var num;
+			if(num3=='+'){
+				num=add(num1,num2);
+			}else if(num3=='-'){
+				num=Reduction(num1,num2);
+			}else if(num3=='*'){
+				num=take(num1,num2);
+			}else if(num3=='/'){
+				num=addition(num1,num2);
+			}else{
+				num=mo(num1,num2);
+			}
+			document.write(num1 + 'num3' + num2 + '='+num);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

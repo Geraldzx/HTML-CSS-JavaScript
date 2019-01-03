@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>课工场论坛列表</title>
+    <link href="css/bbs.css" rel="stylesheet">
+</head>
+<body>
+<div class="bbs">
+    <header><span onclick="postt()">我要发帖</span></header>
+     <section>
+        <ul id="postList"></ul>
+    </section>
+    <div class="post" id="post1">
+        <input class="title" placeholder="请输入标题（1-50个字符）" id="title">
+        所属版块：<select id="x"><option>请选择版块</option><option >电子书籍</option>
+        	<option value=>新课来了</option><option >新手报到</option><option value=>职业规划</option></select>
+        <textarea class="content" id="content"></textarea>
+        <input class="btn" value="发布" onclick="conceal()">
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="js/bbslist.js" ></script>
+</html>
