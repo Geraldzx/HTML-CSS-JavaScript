@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>复选框操作</title>
+		<script type="text/javascript" src="js/jq.js" ></script>
+		<style>
+			li{
+				list-style: none;
+			}
+		</style>
+		<script>
+			$(function(){
+				$(".stus").click(function(){
+					if($(this).prop("checked")){
+					    $("input[type='checkbox']").prop("checked",true);
+					}else{
+						$("input[type='checkbox']").prop("checked",false);
+					}
+				})
+				$("#1").click(function(){
+					 if($("#1").prop("checked")){
+					 	var num1=0;
+					 	var num2=0;
+					    $(".stu").each(function(){
+					    	num2++;
+					    	var currentVal = $(this).prop("checked");
+					    	if(currentVal){
+					    		num1++;
+					    	}
+					    })
+					    if(num1==num2){
+					    	$(".stus").prop("checked",true);
+					    }
+					}else{
+						$(".stus").prop("checked",false);
+					}
+				})
+				$("#2").click(function(){
+					 if($("#2").prop("checked")){
+					 	var num1=0;
+					 	var num2=0;
+					    $(".stu").each(function(){
+					    	num2++;
+					    	var currentVal = $(this).prop("checked");
+					    	if(currentVal){
+					    		num1++;
+					    	}
+					    })
+					    if(num1==num2){
+					    	$(".stus").prop("checked",true);
+					    }
+					}else{
+						$(".stus").prop("checked",false);
+					}
+				})
+				$("#3").click(function(){
+					 if($("#3").prop("checked")){
+					 	var num1=0;
+					 	var num2=0;
+					    $(".stu").each(function(){
+					    	num2++;
+					    	var currentVal = $(this).prop("checked");
+					    	if(currentVal){
+					    		num1++;
+					    	}
+					    })
+					    if(num1==num2){
+					    	$(".stus").prop("checked",true);
+					    }
+					}else{
+						$(".stus").prop("checked",false);
+					}
+				})
+				$("#4").click(function(){
+					 if($("#4").prop("checked")){
+					 	var num1=0;
+					 	var num2=0;
+					    $(".stu").each(function(){
+					    	num2++;
+					    	var currentVal = $(this).prop("checked");
+					    	if(currentVal){
+					    		num1++;
+					    	}
+					    })
+					    if(num1==num2){
+					    	$(".stus").prop("checked",true);
+					    }
+					}else{
+						$(".stus").prop("checked",false);
+					}
+				})
+				$("#5").click(function(){
+					 if($("#5").prop("checked")){
+					 	var num1=0;
+					 	var num2=0;
+					    $(".stu").each(function(){
+					    	num2++;
+					    	var currentVal = $(this).prop("checked");
+					    	if(currentVal){
+					    		num1++;
+					    	}
+					    })
+					    if(num1==num2){
+					    	$(".stus").prop("checked",true);
+					    }
+					}else{
+						$(".stus").prop("checked",false);
+					}
+				})
+				$("#6").click(function(){
+					 if($("#6").prop("checked")){
+					 	var num1=0;
+					 	var num2=0;
+					    $(".stu").each(function(){
+					    	num2++;
+					    	var currentVal = $(this).prop("checked");
+					    	if(currentVal){
+					    		num1++;
+					    	}
+					    })
+					    if(num1==num2){
+					    	$(".stus").prop("checked",true);
+					    }
+					}else{
+						$(".stus").prop("checked",false);
+					}
+				})
+				$("#7").click(function(){
+					 if($("#7").prop("checked")){
+					 	var num1=0;
+					 	var num2=0;
+					    $(".stu").each(function(){
+					    	num2++;
+					    	var currentVal = $(this).prop("checked");
+					    	if(currentVal){
+					    		num1++;
+					    	}
+					    })
+					    if(num1==num2){
+					    	$(".stus").prop("checked",true);
+					    }
+					}else{
+						$(".stus").prop("checked",false);
+					}
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div>
+			<input type="checkbox" class="stus" />全选
+			<ul>
+				<li>
+					<input type="checkbox" class="stu" id="1"/>张三1
+				</li>
+				<li>
+					<input type="checkbox" class="stu" id="2"/>张三2
+				</li>
+				<li>
+					<input type="checkbox" class="stu" id="3"/>张三3
+				</li>
+				<li>
+					<input type="checkbox" class="stu" id="4"/>张三4
+				</li>
+				<li>
+					<input type="checkbox" class="stu" id="5"/>张三5
+				</li>
+				<li>
+					<input type="checkbox" class="stu" id="6"/>张三6
+				</li>
+				<li>
+					<input type="checkbox" class="stu" id="7"/>张三7
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
